@@ -18,5 +18,30 @@ namespace DU___3
             InitializeComponent();
             parentForm = opener;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int lichych = 0, min = int.MaxValue, max = int.MinValue, soucin = 1; ;
+                foreach (string x in textBox1.Lines)
+                {
+                    int y = int.Parse(x);
+                    if (y % 2 != 0)
+                        lichych++;
+                    if (y < min)
+                        min = y;
+                    if (y > max)
+                        max = y;
+                    if (y >= 5 && y < 20)
+                        soucin *= y;
+                }
+                label3.Text = 
+            }
+            catch
+            {
+
+            }
+        }
     }
 }

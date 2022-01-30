@@ -9,3 +9,4 @@ D:\Koj\Programování\GitHub\C#\DU3\DU - 3\DU - 3\obj\Debug\DU - 3.csproj.Genera
 D:\Koj\Programování\GitHub\C#\DU3\DU - 3\DU - 3\obj\Debug\DU - 3.csproj.CoreCompileInputs.cache
 D:\Koj\Programování\GitHub\C#\DU3\DU - 3\DU - 3\obj\Debug\DU - 3.exe
 D:\Koj\Programování\GitHub\C#\DU3\DU - 3\DU - 3\obj\Debug\DU - 3.pdb
+D:\Koj\Programování\GitHub\C#\DU3\DU - 3\DU - 3\obj\Debug\DU___3.Form3.resources

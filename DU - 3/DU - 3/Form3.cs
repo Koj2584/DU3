@@ -22,18 +22,106 @@ namespace DU___3
 
         private void button1_Click(object sender, EventArgs e)
         {
+            label3.Text = "";
             try
             {
                 int n = int.Parse(textBox1.Text);
-                
+                bool interval = false;
+
                 listBox1.Items.Clear();
                 for (int i = 1; i <= n; i++)
                 {
-                    int x = rng.Next(-15, 60);
-                    
-                    listBox1.Items.Add(x);
+                    double x = rng.NextDouble() * 25 - 5;
+
+                    listBox1.Items.Add(Math.Round(x, 2));
+                    if (x > 2 && x <= 5)
+                    {
+                        label3.Text = "V posloupnosti je minimalně jedno číslo v intervalu (2,5>";
+                        break;
+                    }
                 }
-                label3.Text = "";
+            }
+            catch
+            {
+                MessageBox.Show("Neplatný počet čísel!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            label3.Text = "";
+            try
+            {
+                int n = int.Parse(textBox1.Text);
+                bool interval = false;
+
+                listBox1.Items.Clear();
+                for (int i = 1; i <= n && !interval; i++)
+                {
+                    double x = rng.NextDouble() * 25 - 5;
+                    if (x > 2 && x <= 5)
+                        interval = true;
+
+                    listBox1.Items.Add(Math.Round(x, 2));
+                }
+                if (interval)
+                    label3.Text = "V posloupnosti je minimalně jedno číslo v intervalu (2,5>";
+            }
+            catch
+            {
+                MessageBox.Show("Neplatný počet čísel!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            label3.Text = "";
+            try
+            {
+                int n = int.Parse(textBox1.Text);
+                bool interval = false;
+                int i = 1;
+
+                listBox1.Items.Clear();
+                while (i <= n && !interval)
+                {
+                    double x = rng.NextDouble() * 25 - 5;
+                    if (x > 2 && x <= 5)
+                        interval = true;
+
+                    listBox1.Items.Add(Math.Round(x, 2));
+                    i++;
+                }
+                if (interval)
+                    label3.Text = "V posloupnosti je minimalně jedno číslo v intervalu (2,5>";
+            }
+            catch
+            {
+                MessageBox.Show("Neplatný počet čísel!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            label3.Text = "";
+            try
+            {
+                int n = int.Parse(textBox1.Text);
+                bool interval = false;
+                int i = 1;
+
+                listBox1.Items.Clear();
+                do
+                {
+                    double x = rng.NextDouble() * 25 - 5;
+                    if (x > 2 && x <= 5)
+                        interval = true;
+
+                    listBox1.Items.Add(Math.Round(x, 2));
+                    i++;
+                } while (i <= n && !interval);
+                if (interval)
+                    label3.Text = "V posloupnosti je minimalně jedno číslo v intervalu (2,5>";
             }
             catch
             {

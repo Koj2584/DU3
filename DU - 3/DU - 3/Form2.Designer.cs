@@ -95,7 +95,6 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(286, 212);
             this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
             // 
             // Form2
             // 
