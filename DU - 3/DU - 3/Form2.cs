@@ -26,6 +26,8 @@ namespace DU___3
             try
             {
                 int n = int.Parse(textBox1.Text);
+                if (n < 1)
+                    int.Parse("error");
                 int min = int.MaxValue;
                 int pocetMin = 0;
                 int poziceMin = 0;

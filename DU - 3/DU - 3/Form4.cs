@@ -23,7 +23,9 @@ namespace DU___3
         {
             try
             {
-                int lichych = 0, min = int.MaxValue, max = int.MinValue, soucin = 1; ;
+                int.Parse(textBox1.Text);
+                int lichych = 0, min = int.MaxValue, max = int.MinValue, soucin = 1, cifSoucet = 0;
+                bool test = false;
                 foreach (string x in textBox1.Lines)
                 {
                     int y = int.Parse(x);
@@ -34,13 +36,27 @@ namespace DU___3
                     if (y > max)
                         max = y;
                     if (y >= 5 && y < 20)
+                    {
                         soucin *= y;
+                        test = true;
+                    }
                 }
-                label3.Text = 
+                while(max>0)
+                {
+                    int cifra = max % 10;
+                    max /= 10;
+                    cifSoucet += cifra;
+                }
+                if(min==0&&max==0)
+                    label3.Text = "Zadla jset pouze nuly";
+                else if(!test)
+                    label3.Text = "Min: " + min + "\nLichých čísel: " +lichych+ "\nCiferný součet max čísla: " + cifSoucet;
+                else
+                    label3.Text = "Min: " + min + "\nLichých čísel: " + lichych + "\nSoučin v intervalu: " + soucin + "\nCiferný součet max čísla: " + cifSoucet;
             }
             catch
             {
-
+                MessageBox.Show("Neplatný počet čísel!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
