@@ -18,6 +18,7 @@ namespace DU___3
         {
             InitializeComponent();
             parentForm = opener;
+            this.FormClosing += Form_Closeing;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -26,7 +27,8 @@ namespace DU___3
             try
             {
                 int n = int.Parse(textBox1.Text);
-                bool interval = false;
+                if (n < 1)
+                    int.Parse("error");
 
                 listBox1.Items.Clear();
                 for (int i = 1; i <= n; i++)
@@ -53,6 +55,8 @@ namespace DU___3
             try
             {
                 int n = int.Parse(textBox1.Text);
+                if (n < 1)
+                    int.Parse("error");
                 bool interval = false;
 
                 listBox1.Items.Clear();
@@ -79,6 +83,8 @@ namespace DU___3
             try
             {
                 int n = int.Parse(textBox1.Text);
+                if (n < 1)
+                    int.Parse("error");
                 bool interval = false;
                 int i = 1;
 
@@ -107,6 +113,8 @@ namespace DU___3
             try
             {
                 int n = int.Parse(textBox1.Text);
+                if (n < 1)
+                    int.Parse("error");
                 bool interval = false;
                 int i = 1;
 
@@ -127,6 +135,10 @@ namespace DU___3
             {
                 MessageBox.Show("Neplatný počet čísel!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        private void Form_Closeing(object sender, FormClosingEventArgs e)
+        {
+            parentForm.Visible = true;
         }
     }
 }

@@ -19,6 +19,7 @@ namespace DU___3
         {
             InitializeComponent();
             parentForm = opener;
+            this.FormClosing += Form_Closeing;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -70,6 +71,10 @@ namespace DU___3
             {
                 MessageBox.Show("Neplatný počet čísel!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+        private void Form_Closeing(object sender, FormClosingEventArgs e)
+        {
+            parentForm.Visible = true;
         }
     }
 }
