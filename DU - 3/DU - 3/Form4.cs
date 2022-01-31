@@ -24,7 +24,6 @@ namespace DU___3
         {
             try
             {
-                int.Parse(textBox1.Text);
                 int lichych = 0, min = int.MaxValue, max = int.MinValue, soucin = 1, cifSoucet = 0;
                 bool test = false;
                 foreach (string x in textBox1.Lines)
