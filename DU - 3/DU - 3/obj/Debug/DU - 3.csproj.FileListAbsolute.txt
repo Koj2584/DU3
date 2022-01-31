@@ -11,3 +11,16 @@ D:\Koj\Programování\GitHub\C#\DU3\DU - 3\DU - 3\obj\Debug\DU - 3.exe
 D:\Koj\Programování\GitHub\C#\DU3\DU - 3\DU - 3\obj\Debug\DU - 3.pdb
 D:\Koj\Programování\GitHub\C#\DU3\DU - 3\DU - 3\obj\Debug\DU___3.Form3.resources
 D:\Koj\Programování\GitHub\C#\DU3\DU - 3\DU - 3\obj\Debug\DU___3.Form4.resources
+G:\Dokumenty\DU3\DU - 3\DU - 3\bin\Debug\DU - 3.exe.config
+G:\Dokumenty\DU3\DU - 3\DU - 3\bin\Debug\DU - 3.exe
+G:\Dokumenty\DU3\DU - 3\DU - 3\bin\Debug\DU - 3.pdb
+G:\Dokumenty\DU3\DU - 3\DU - 3\obj\Debug\DU - 3.csprojAssemblyReference.cache
+G:\Dokumenty\DU3\DU - 3\DU - 3\obj\Debug\DU___3.Form1.resources
+G:\Dokumenty\DU3\DU - 3\DU - 3\obj\Debug\DU___3.Form2.resources
+G:\Dokumenty\DU3\DU - 3\DU - 3\obj\Debug\DU___3.Form3.resources
+G:\Dokumenty\DU3\DU - 3\DU - 3\obj\Debug\DU___3.Form4.resources
+G:\Dokumenty\DU3\DU - 3\DU - 3\obj\Debug\DU___3.Properties.Resources.resources
+G:\Dokumenty\DU3\DU - 3\DU - 3\obj\Debug\DU - 3.csproj.GenerateResource.cache
+G:\Dokumenty\DU3\DU - 3\DU - 3\obj\Debug\DU - 3.csproj.CoreCompileInputs.cache
+G:\Dokumenty\DU3\DU - 3\DU - 3\obj\Debug\DU - 3.exe
+G:\Dokumenty\DU3\DU - 3\DU - 3\obj\Debug\DU - 3.pdb
